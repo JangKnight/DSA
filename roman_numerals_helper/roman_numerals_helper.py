@@ -16,8 +16,20 @@ class RomanNumerals:
     }
     @staticmethod
     def to_roman(val : int) -> str:
-        return ''
+        result = ''
+
+        for numeral, value in RomanNumerals.ROM.items():
+            count = val // value
+            if count > 0:
+                result += numeral * count
+                val -= value * count
+        return result
 
     @staticmethod
     def from_roman(roman_num : str) -> int:  
-        return num = 0
+        num = 0
+        for numeral, value in RomanNumerals.ROM.items():
+            while roman_num.startswith(numeral):
+                num += value
+                roman_num = roman_num[len(numeral):]
+        return num
