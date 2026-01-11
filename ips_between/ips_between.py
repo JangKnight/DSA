@@ -3,7 +3,7 @@ from ipaddress import ip_address
 def ips_between(start, end):
     return int(ip_address(end)) - int(ip_address(start))
 
-=====================================OLD CODE: DO NOT USE OR DELETE
+=====================================
 
 # def ips_between(start, end):
 #     a = sum([int(e)*256**(3-i) for i, e in enumerate(start.split('.'))])
