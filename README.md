@@ -1,5 +1,2 @@
-# Python DSA Practice 2025
+## Daily Katas and Grokking Problems
 
-## TOC
- - 1: stack.py
-    > reverse string
