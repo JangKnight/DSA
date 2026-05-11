@@ -1,4 +1,4 @@
-def is_panagram(s):
+def is_pangram(s):
     alphaSet = set()
     letters = str(s.lower().replace(" ", ""))
 
